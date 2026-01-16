@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Erekle Bagashvili — Ultracyclist</title>
+  <meta name="description" content="Erekle Bagashvili — Ultracyclist. World record attempts, endurance challenges, partnerships, and contact." />
+  <style>
+    :root{
+      --bg:#07121f;
+      --card:#0b1b2e;
+      --text:#e8eef7;
+      --muted:#b7c3d6;
+      --accent:#22c55e; /* change to your brand color */
+      --line:rgba(232,238,247,.12);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 20% 0%, rgba(34,197,94,.12), transparent 55%),
+                  radial-gradient(900px 500px at 90% 10%, rgba(59,130,246,.10), transparent 60%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .nav{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(7,18,31,.6);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{font-weight:800; letter-spacing:.3px}
+    .links{display:flex;gap:14px;flex-wrap:wrap}
+    .links a{opacity:.9;text-decoration:none;font-size:14px}
+    .links a:hover{opacity:1;text-decoration:underline}
+    .hero{
+      padding:56px 0 28px;
+      display:grid;
+      grid-template-columns: 1.35fr .65fr;
+      gap:22px;
+      align-items:start;
+    }
+    @media (max-width:900px){ .hero{grid-template-columns:1fr} }
+    .h1{font-size:42px;line-height:1.1;margin:0 0 10px;font-weight:900}
+    .sub{color:var(--muted);max-width:60ch;margin:0 0 18px}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:12px 14px;border-radius:12px;
+      border:1px solid var(--line);
+      text-decoration:none;font-weight:700;
+      background: rgba(255,255,255,.04);
+    }
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(34,197,94,.95), rgba(34,197,94,.65));
+      color:#06131f;border:none;
+    }
+    .btn:hover{transform: translateY(-1px)}
+    .card{
+      background: rgba(11,27,46,.72);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    .kpis{display:grid;gap:10px}
+    .kpi{display:flex;justify-content:space-between;gap:10px;padding:10px;border-radius:12px;background:rgba(255,255,255,.03);border:1px solid var(--line)}
+    .kpi span{color:var(--muted)}
+    section{padding:26px 0}
+    .section-title{font-size:22px;margin:0 0 12px;font-weight:900}
+    .grid{
+      display:grid; gap:12px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width:900px){ .grid{grid-template-columns:1fr} }
+    .item-title{font-weight:900;margin:0 0 8px}
+    .muted{color:var(--muted)}
+    .pill{
+      display:inline-block;font-size:12px;
+      padding:5px 9px;border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      color:var(--muted);
+    }
+    .timeline{display:grid;gap:12px}
+    .row{display:flex;gap:12px;align-items:flex-start}
+    .dot{width:10px;height:10px;border-radius:999px;background:var(--accent);margin-top:7px;flex:0 0 auto}
+    .row .card{flex:1}
+    .logos{display:flex;gap:12px;flex-wrap:wrap}
+    .logo{
+      padding:12px 14px;border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      color:var(--muted);
+      font-weight:800;
+    }
+    form{display:grid;gap:10px}
+    input, textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      color:var(--text);
+      outline:none;
+    }
+    input::placeholder, textarea::placeholder{color:rgba(183,195,214,.75)}
+    .footer{padding:28px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin-top:18px}
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="container nav-inner">
+      <div class="brand">Erekle Bagashvili</div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#upcoming">Upcoming</a>
+        <a href="#partnerships">Partnerships</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="container" id="home">
+    <div class="hero">
+      <div>
+        <h1 class="h1">Erekle Bagashvili — Ultracyclist</h1>
+        <p class="sub">
+          I take on long-distance cycling challenges that push limits and inspire people to go farther—physically and mentally.
+          <br><span class="pill">Record Attempts • Endurance Storytelling • Brand Partnerships</span>
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#partnerships">Partner with me</a>
+          <a class="btn" href="#achievements">See achievements</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="kpis">
+          <div class="kpi"><strong>Base</strong><span>Tbilisi, Georgia</span></div>
+          <div class="kpi"><strong>Focus</strong><span>Ultra-distance cycling</span></div>
+          <div class="kpi"><strong>Next</strong><span>Azerbaijan Crossing</span></div>
+          <div class="kpi"><strong>2026</strong><span>Transcontinental Race</span></div>
+        </div>
+        <p class="muted" style="margin:12px 0 0">
+          Replace this with a photo later (or embed Instagram / YouTube links).
+        </p>
+      </div>
+    </div>
+
+    <section id="achievements">
+      <h2 class="section-title">Achievements</h2>
+      <div class="grid">
+        <div class="card">
+          <p class="item-title">Georgia Crossing — World Record</p>
+          <p class="muted">Route: <strong>[Start]</strong> → <strong>[Finish]</strong></p>
+          <ul class="muted">
+            <li>Distance: [km]</li>
+            <li>Time: [hh:mm]</li>
+            <li>Recognition: [Federation / media]</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <p class="item-title">PT to Georgia</p>
+          <p class="muted">A long-range endurance journey across borders.</p>
+          <ul class="muted">
+            <li>Distance: [km]</li>
+            <li>Days: [#]</li>
+            <li>Key story: [1 line]</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <p class="item-title">Other Highlights</p>
+          <p class="muted">Add 2–4 strongest proof points.</p>
+          <ul class="muted">
+            <li>[Top result / podium / fastest known time]</li>
+            <li>[Notable event / route / challenge]</li>
+            <li>[Media feature / documentary / interview]</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="upcoming">
+      <h2 class="section-title">Upcoming challenges</h2>
+      <div class="timeline">
+        <div class="row">
+          <div class="dot"></div>
+          <div class="card">
+            <p class="item-title">Azerbaijan Crossing — World Record Attempt</p>
+            <p class="muted">Planned: [Month Year]. Finish ceremony: [Location].</p>
+            <p class="muted"><strong>Support needed:</strong> logistics, fueling, media production, finish-line activation.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="dot"></div>
+          <div class="card">
+            <p class="item-title">Turkey Crossing — Ultra Challenge</p>
+            <p class="muted">Planned: [Month Year]. Story angle: [1 line].</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="dot"></div>
+          <div class="card">
+            <p class="item-title">Transcontinental Race 2026</p>
+            <p class="muted">Goal: [finish / top % / personal best]. Content plan: daily updates + recap film.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="partnerships">
+      <h2 class="section-title">Partnerships</h2>
+      <div class="grid">
+        <div class="card">
+          <p class="item-title">What partners get</p>
+          <ul class="muted">
+            <li>Brand visibility during record attempts (kit, bike, finish ceremony)</li>
+            <li>Social content packages (reels, stories, recap video)</li>
+            <li>PR moments and documentary-style storytelling</li>
+            <li>Community activations (talks, rides, challenges)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <p class="item-title">Sponsor tiers (example)</p>
+          <ul class="muted">
+            <li><strong>Title Partner:</strong> main branding + full content package</li>
+            <li><strong>Official Partner:</strong> gear placement + feature content</li>
+            <li><strong>Support Partner:</strong> shoutouts + logo placement</li>
+          </ul>
+        </div>
+        <div class="card">
+          <p class="item-title">Current / past partners</p>
+          <div class="logos">
+            <div class="logo">[Logo]</div>
+            <div class="logo">[Logo]</div>
+            <div class="logo">[Logo]</div>
+          </div>
+          <p class="muted" style="margin-top:10px">Replace with real logos or names when ready.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="grid" style="grid-template-columns: 1.2fr .8fr;">
+        <div class="card">
+          <form onsubmit="return sendEmail(event)">
+            <input id="name" placeholder="Your name" required />
+            <input id="email" type="email" placeholder="Your email" required />
+            <input id="subject" placeholder="Subject" />
+            <textarea id="message" rows="6" placeholder="Message" required></textarea>
+            <button class="btn primary" type="submit">Send</button>
+            <p class="muted" style="margin:6px 0 0">This uses your email app (no backend needed).</p>
+          </form>
+        </div>
+        <div class="card">
+          <p class="item-title">Direct</p>
+          <p class="muted">
+            Email: <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a><br/>
+            Instagram: <a href="#" target="_blank" rel="noreferrer">@yourhandle</a><br/>
+            YouTube: <a href="#" target="_blank" rel="noreferrer">Your channel</a><br/>
+            Strava: <a href="#" target="_blank" rel="noreferrer">Profile</a>
+          </p>
+          <p class="muted" style="margin-top:10px">
+            Tip: add a 1-page PDF “Partnership Deck” link here later.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      © <span id="year"></span> Erekle Bagashvili • Ultracyclist
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function sendEmail(e){
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const subject = document.getElementById("subject").value.trim() || "Partnership / Inquiry";
+      const message = document.getElementById("message").value.trim();
+
+      const body = encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\n\n${message}`
+      );
+
+      // Replace YOUR_EMAIL@example.com with your real email
+      window.location.href = `mailto:YOUR_EMAIL@example.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+      return false;
+    }
+  </script>
+</body>
+</html>
