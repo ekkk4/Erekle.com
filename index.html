@@ -5,185 +5,198 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Erekle Bagashvili — Ultracyclist</title>
   <meta name="description" content="Erekle Bagashvili — Ultracyclist. World record attempts, endurance challenges, partnerships, and contact." />
-  
-   <style>
-  :root{
-    --bg:#061427;           /* deep rugged navy */
-    --card:#0b1f33;         /* card surface */
-    --text:#eaf2ff;
-    --muted:#a9b9d3;
-    --accent:#22c55e;       /* green */
-    --accent2:#16a34a;      /* darker green */
-    --line:rgba(234,242,255,.12);
-  }
 
-  *{box-sizing:border-box}
-  body{
-    margin:0;
-    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
-    color:var(--text);
-    line-height:1.55;
+  <style>
+    :root{
+      --bg:#050b16;            /* cinematic near-black navy */
+      --card:#0a1630;          /* deep blue surface */
+      --text:#eaf2ff;
+      --muted:#b4c2db;
+      --accent:#22c55e;        /* green */
+      --line:rgba(234,242,255,.12);
+    }
 
-    /* Rugged adventure layers:
-       - deep gradients
-       - subtle grain
-       - topo lines (SVG pattern)
-    */
-    background:
-      radial-gradient(1200px 700px at 15% 0%, rgba(34,197,94,.16), transparent 55%),
-      radial-gradient(900px 520px at 92% 8%, rgba(59,130,246,.12), transparent 60%),
-      linear-gradient(180deg, rgba(255,255,255,.04), transparent 35%),
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='900'%3E%3Cg fill='none' stroke='rgba(234,242,255,0.07)' stroke-width='1'%3E%3Cpath d='M120 170c70-60 170-90 280-80 110 10 190 60 260 120 60 50 150 90 260 80 90-8 165-48 220-100'/%3E%3Cpath d='M70 250c110-90 240-120 380-95 140 25 220 95 290 170 70 75 185 125 315 95 95-22 165-70 220-130'/%3E%3Cpath d='M40 340c140-110 300-150 470-120 170 30 270 120 355 220 85 105 230 165 390 125 110-27 190-90 250-160'/%3E%3Cpath d='M190 610c50-65 120-110 210-125 90-15 170 10 240 55 75 50 150 110 245 120 95 10 180-25 245-85 60-55 100-120 120-175'/%3E%3Cpath d='M240 700c70-55 140-85 220-85 95 0 160 30 225 75 60 45 140 90 235 85 95-5 165-55 220-120 55-65 85-140 95-200'/%3E%3Cpath d='M820 640c-50-40-105-55-165-45-70 12-120 55-155 105-30 45-70 85-125 95-55 10-110-10-150-45-45-40-75-90-90-140'/%3E%3Cpath d='M910 520c-70-55-145-75-230-60-100 18-165 85-210 160-40 65-95 125-175 140-80 15-155-25-210-85-55-60-90-135-105-210'/%3E%3Cpath d='M980 390c-80-60-170-85-270-70-125 18-205 95-260 185-55 95-135 175-255 195-120 20-220-45-295-140-65-85-105-190-125-280'/%3E%3Cpath d='M520 260c-35-40-85-65-140-70-65-5-125 20-170 60-50 45-95 105-165 120-70 15-140-20-190-75'/%3E%3Cpath d='M640 210c-45-55-115-90-195-95-95-7-175 30-240 85-70 60-135 140-235 160-100 20-195-25-265-95'/%3E%3C/g%3E%3Cg fill='none' stroke='rgba(34,197,94,0.08)' stroke-width='1'%3E%3Cpath d='M420 560c55-45 115-70 185-70 80 0 140 25 195 60 55 35 115 70 195 70 75 0 135-30 180-75'/%3E%3Cpath d='M360 620c70-60 150-95 250-95 110 0 185 35 255 80 70 45 145 95 255 95 95 0 170-40 225-100'/%3E%3C/g%3E%3C/svg%3E"),
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      line-height:1.55;
 
-      var(--bg);
-    background-size: auto, auto, auto, 900px 700px, auto;
-    background-attachment: fixed, fixed, fixed, fixed, fixed;
-  }
+      /* Cinematic: vignette + soft spotlight + subtle grain */
+      background:
+        radial-gradient(900px 520px at 20% 0%, rgba(34,197,94,.14), transparent 55%),
+        radial-gradient(1000px 650px at 80% 10%, rgba(59,130,246,.14), transparent 60%),
+        radial-gradient(1200px 900px at 50% 10%, rgba(255,255,255,.06), transparent 60%),
+        radial-gradient(1400px 900px at 50% 90%, rgba(0,0,0,.65), rgba(0,0,0,.90)),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.12'/%3E%3C/svg%3E"),
+        var(--bg);
+      background-attachment: fixed,fixed,fixed,fixed,fixed,fixed;
+    }
 
-  a{color:inherit}
-  .container{max-width:1100px;margin:0 auto;padding:24px}
+    a{color:inherit}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
 
-  .nav{
-    position:sticky; top:0; z-index:10;
-    backdrop-filter: blur(10px);
-    background: rgba(6,20,39,.72);
-    border-bottom:1px solid var(--line);
-  }
-  .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
-  .brand{font-weight:900; letter-spacing:.4px}
-  .links{display:flex;gap:14px;flex-wrap:wrap}
-  .links a{opacity:.9;text-decoration:none;font-size:14px}
-  .links a:hover{opacity:1;text-decoration:underline}
+    .nav{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(12px);
+      background: rgba(5,11,22,.65);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{font-weight:950; letter-spacing:.4px}
+    .links{display:flex;gap:14px;flex-wrap:wrap}
+    .links a{opacity:.9;text-decoration:none;font-size:14px}
+    .links a:hover{opacity:1;text-decoration:underline}
 
-  .hero{
-    padding:56px 0 28px;
-    display:grid;
-    grid-template-columns: 1.15fr .85fr;
-    gap:22px;
-    align-items:stretch;
-  }
-  @media (max-width:900px){ .hero{grid-template-columns:1fr} }
+    .hero{
+      padding:56px 0 28px;
+      display:grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap:22px;
+      align-items:stretch;
+    }
+    @media (max-width:900px){ .hero{grid-template-columns:1fr} }
 
-  .h1{font-size:44px;line-height:1.05;margin:0 0 10px;font-weight:950}
-  .sub{color:var(--muted);max-width:62ch;margin:0 0 18px}
+    .h1{font-size:46px;line-height:1.05;margin:0 0 10px;font-weight:980}
+    .sub{color:var(--muted);max-width:62ch;margin:0 0 18px}
 
-  .cta-row{display:flex;gap:10px;flex-wrap:wrap}
-  .btn{
-    display:inline-flex;align-items:center;justify-content:center;
-    padding:12px 14px;border-radius:14px;
-    border:1px solid var(--line);
-    text-decoration:none;font-weight:850;
-    background: rgba(255,255,255,.04);
-    transition: transform .12s ease, opacity .12s ease;
-  }
-  .btn.primary{
-    background: linear-gradient(135deg, rgba(34,197,94,.95), rgba(22,163,74,.75));
-    color:#06131f;border:none;
-  }
-  .btn:hover{transform: translateY(-1px)}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:12px 14px;border-radius:14px;
+      border:1px solid var(--line);
+      text-decoration:none;font-weight:900;
+      background: rgba(255,255,255,.04);
+      transition: transform .12s ease, opacity .12s ease;
+      cursor:pointer;
+    }
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(34,197,94,.98), rgba(34,197,94,.65));
+      color:#06131f;border:none;
+      box-shadow: 0 18px 50px rgba(34,197,94,.18);
+    }
+    .btn:hover{transform: translateY(-1px)}
 
-  .pill{
-    display:inline-block;font-size:12px;
-    padding:6px 10px;border-radius:999px;
-    border:1px solid var(--line);
-    background:rgba(255,255,255,.03);
-    color:var(--muted);
-  }
+    .pill{
+      display:inline-block;font-size:12px;
+      padding:6px 10px;border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      color:var(--muted);
+    }
 
-  .card{
-    background: linear-gradient(180deg, rgba(11,31,51,.78), rgba(11,31,51,.58));
-    border:1px solid var(--line);
-    border-radius:18px;
-    padding:16px;
-    box-shadow: 0 18px 50px rgba(0,0,0,.35);
-  }
+    .card{
+      background: linear-gradient(180deg, rgba(10,22,48,.80), rgba(10,22,48,.58));
+      border:1px solid rgba(234,242,255,.12);
+      border-radius:18px;
+      padding:16px;
+      box-shadow: 0 18px 60px rgba(0,0,0,.42);
+    }
 
-  /* Photo panel */
-  .photo-card{
-    padding:0;
-    overflow:hidden;
-    position:relative;
-    min-height: 320px;
-  }
-  .photo{
-    position:absolute; inset:0;
-    background-image:
-      linear-gradient(180deg, rgba(6,20,39,.15), rgba(6,20,39,.86)),
-      url("https://github.com/ekkk4/Erekle.com/blob/main/assets/hero.jpeg");
-    background-size: cover;
-    background-position: center;
-    transform: scale(1.02);
-  }
-  .photo-overlay{
-    position:absolute; inset:0;
-    border:1px solid rgba(234,242,255,.10);
-    border-radius:18px;
-    pointer-events:none;
-  }
-  .photo-content{
-    position:relative;
-    padding:16px;
-    display:grid;
-    gap:10px;
-    height:100%;
-    align-content:end;
-  }
-  .kpi{
-    display:flex;justify-content:space-between;gap:10px;
-    padding:10px 12px;border-radius:14px;
-    background:rgba(6,20,39,.45);
-    border:1px solid rgba(234,242,255,.12);
-  }
-  .kpi span{color:var(--muted)}
+    /* Cinematic hero poster */
+    .poster{
+      padding:0;
+      overflow:hidden;
+      position:relative;
+      min-height: 360px;
+      border-radius:20px;
+      border:1px solid rgba(234,242,255,.14);
+    }
+    .poster-img{
+      position:absolute; inset:0;
+      background-image:
+        linear-gradient(90deg, rgba(5,11,22,.75), rgba(5,11,22,.25) 55%, rgba(5,11,22,.85)),
+        linear-gradient(180deg, rgba(5,11,22,.05), rgba(5,11,22,.90)),
+        url("assets/hero.jpg");
+      background-size: cover;
+      background-position: center;
+      transform: scale(1.02);
+      filter: saturate(1.05) contrast(1.08);
+    }
+    .poster-badge{
+      position:absolute; inset:0;
+      display:grid;
+      align-content:end;
+      gap:10px;
+      padding:16px;
+    }
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      width:max-content;
+      padding:8px 10px;
+      border-radius:999px;
+      background: rgba(5,11,22,.55);
+      border:1px solid rgba(234,242,255,.14);
+      color: var(--muted);
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:.2px;
+    }
+    .dot{
+      width:8px;height:8px;border-radius:999px;background:var(--accent);
+      box-shadow: 0 0 0 4px rgba(34,197,94,.14);
+      display:inline-block;
+    }
+    .stats{
+      display:grid; gap:10px;
+    }
+    .stat{
+      display:flex;justify-content:space-between;gap:10px;
+      padding:10px 12px;border-radius:14px;
+      background:rgba(5,11,22,.55);
+      border:1px solid rgba(234,242,255,.14);
+    }
+    .stat span{color:var(--muted)}
 
-  section{padding:26px 0}
-  .section-title{font-size:22px;margin:0 0 12px;font-weight:950}
+    section{padding:26px 0}
+    .section-title{font-size:22px;margin:0 0 12px;font-weight:980}
 
-  .grid{
-    display:grid; gap:12px;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  @media (max-width:900px){ .grid{grid-template-columns:1fr} }
+    .grid{
+      display:grid; gap:12px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width:900px){ .grid{grid-template-columns:1fr} }
 
-  .item-title{font-weight:950;margin:0 0 8px}
-  .muted{color:var(--muted)}
+    .item-title{font-weight:980;margin:0 0 8px}
+    .muted{color:var(--muted)}
 
-  .timeline{display:grid;gap:12px}
-  .row{display:flex;gap:12px;align-items:flex-start}
-  .dot{width:10px;height:10px;border-radius:999px;background:var(--accent);margin-top:7px;flex:0 0 auto}
-  .row .card{flex:1}
+    .timeline{display:grid;gap:12px}
+    .row{display:flex;gap:12px;align-items:flex-start}
+    .row-dot{width:10px;height:10px;border-radius:999px;background:var(--accent);margin-top:7px;flex:0 0 auto}
+    .row .card{flex:1}
 
-  .logos{display:flex;gap:12px;flex-wrap:wrap}
-  .logo{
-    padding:12px 14px;border-radius:16px;
-    border:1px solid var(--line);
-    background:rgba(255,255,255,.03);
-    color:var(--muted);
-    font-weight:900;
-  }
+    .logos{display:flex;gap:12px;flex-wrap:wrap}
+    .logo{
+      padding:12px 14px;border-radius:16px;
+      border:1px solid rgba(234,242,255,.12);
+      background:rgba(255,255,255,.03);
+      color:var(--muted);
+      font-weight:950;
+    }
 
-  form{display:grid;gap:10px}
-  input, textarea{
-    width:100%;
-    padding:12px 12px;
-    border-radius:14px;
-    border:1px solid var(--line);
-    background:rgba(255,255,255,.03);
-    color:var(--text);
-    outline:none;
-  }
-  input::placeholder, textarea::placeholder{color:rgba(169,185,211,.78)}
+    form{display:grid;gap:10px}
+    input, textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid rgba(234,242,255,.12);
+      background:rgba(255,255,255,.03);
+      color:var(--text);
+      outline:none;
+    }
+    input::placeholder, textarea::placeholder{color:rgba(180,194,219,.75)}
 
-  .footer{
-    padding:28px 0;
-    color:var(--muted);
-    font-size:14px;
-    border-top:1px solid var(--line);
-    margin-top:18px
-  }
-</style>
-
-
+    .footer{
+      padding:28px 0;
+      color:var(--muted);
+      font-size:14px;
+      border-top:1px solid rgba(234,242,255,.12);
+      margin-top:18px
+    }
+  </style>
 </head>
 
 <body>
@@ -205,8 +218,8 @@
       <div>
         <h1 class="h1">Erekle Bagashvili — Ultracyclist</h1>
         <p class="sub">
-          I take on long-distance cycling challenges that push limits and inspire people to go farther—physically and mentally.
-          <br><span class="pill">Record Attempts • Endurance Storytelling • Brand Partnerships</span>
+          Record attempts, endurance storytelling, and projects that push human limits.
+          <br><span class="pill">World Records • Ultra Challenges • Partnerships</span>
         </p>
         <div class="cta-row">
           <a class="btn primary" href="#partnerships">Partner with me</a>
@@ -215,18 +228,18 @@
         </div>
       </div>
 
-      <div class="card photo-card">
-  <div class="photo" aria-label="Erekle photo"></div>
-  <div class="photo-content">
-    <div class="kpi"><strong>Base</strong><span>Tbilisi, Georgia</span></div>
-    <div class="kpi"><strong>Focus</strong><span>Ultra-distance cycling</span></div>
-    <div class="kpi"><strong>Next</strong><span>Azerbaijan Crossing</span></div>
-    <div class="kpi"><strong>2026</strong><span>Transcontinental Race</span></div>
-    <span class="pill">Rugged Adventure • Dark Blue • Green</span>
-  </div>
-  <div class="photo-overlay"></div>
-</div>
-
+      <div class="poster">
+        <div class="poster-img" aria-label="Erekle photo"></div>
+        <div class="poster-badge">
+          <div class="tag"><span class="dot"></span> Cinematic Documentary • Dark Blue • Green</div>
+          <div class="stats">
+            <div class="stat"><strong>Base</strong><span>Tbilisi, Georgia</span></div>
+            <div class="stat"><strong>Focus</strong><span>Ultra-distance cycling</span></div>
+            <div class="stat"><strong>Next</strong><span>Azerbaijan Crossing</span></div>
+            <div class="stat"><strong>2026</strong><span>Transcontinental Race</span></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <section id="achievements">
@@ -268,7 +281,7 @@
       <h2 class="section-title">Upcoming challenges</h2>
       <div class="timeline">
         <div class="row">
-          <div class="dot"></div>
+          <div class="row-dot"></div>
           <div class="card">
             <p class="item-title">Azerbaijan Crossing — World Record Attempt</p>
             <p class="muted">Planned: [Month Year]. Finish ceremony: [Location].</p>
@@ -276,14 +289,14 @@
           </div>
         </div>
         <div class="row">
-          <div class="dot"></div>
+          <div class="row-dot"></div>
           <div class="card">
             <p class="item-title">Turkey Crossing — Ultra Challenge</p>
             <p class="muted">Planned: [Month Year]. Story angle: [1 line].</p>
           </div>
         </div>
         <div class="row">
-          <div class="dot"></div>
+          <div class="row-dot"></div>
           <div class="card">
             <p class="item-title">Transcontinental Race 2026</p>
             <p class="muted">Goal: [finish / top % / personal best]. Content plan: daily updates + recap film.</p>
